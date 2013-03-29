@@ -7,8 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<%= link_to "Home", root_path %>
+<%= link_to "About", about_path %>
 
 <%= yield %>
+
+<div class = "footer" >
+	<small>
+	<%= link_to "One Month Rails", "http://onemonthrails.com" %> application.
+	<%= link_to "Mattan Griffel", "http://mattangriffel.com" %>
+	</small>
+</div>
+
 
 </body>
 </html>
